@@ -13,7 +13,7 @@ function maxValue(num1, num2, num3)
   {
     largestNum = num3;
   }
-  console.log(largestNum);
+  return largestNum;
 }
 
-maxValue(15,20,11);
+console.log(maxValue(15,20,11));

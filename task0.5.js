@@ -1,8 +1,9 @@
-function area(height, base){
-  
- var area = height * base / 2;//formular to calculate area
-  console.log (area)
+function areaOfTriangle(side1,side2,side3){
+
+var s = (side1+side2+side3)/2  
+var area = (s*(s-side1)*(s-side2)*(s-side3)) ** 0.5
+console.log(area.toFixed(2))
 }
   
 
-area(5,3)
+areaOfTriangle(5,3,7)

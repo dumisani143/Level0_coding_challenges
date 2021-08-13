@@ -1,10 +1,12 @@
-function hoursAndMinutes (a){
+function convertToTime(t) {
+  t = Number(t);
+  var hours = Math.floor(t / 60);
+  var minutes = Math.floor(t % 60);
 
-  var hours = Math.floor(a/60); //function to round of float to integer/whole number
-  var minutes = a % 60;
-
-  console.log( {hours,minutes})//used curly braces to seperate two results
+  var converted_hours = hours > 0 ? hours + (hours == 1 ? " hour, " : " hours, ") : "";
+  var converted_minutes = minutes > 0 ? minutes + (minutes == 1 ? " minute, " : " minutes, ") : "";
   
+  return converted_hours + converted_minutes ; 
 }
 
-hoursAndMinutes(133)
+console.log(convertToTime(133))

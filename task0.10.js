@@ -1,5 +1,5 @@
 function commonCharactors(string1, string2) {
-    //converts string to lower case and declars output to empty string
+   
     var str1 = string1.toLowerCase();
     var str2 = string2.toLowerCase();
     var result = "";
@@ -8,12 +8,12 @@ function commonCharactors(string1, string2) {
     for (var a = 0; a < str1.length; a++) {
       for (var b = 0; b < str2.length; b++) {
         if (str1[a] === str2[b]) {
-          result += str1[a];
+          result += str1[a]+",";
         }
       }
+      
     }
-  
-    console.log(result);
+ console.log(result);
   }
   
   commonCharactors("house", "computers");
