@@ -1,27 +1,17 @@
-function vowels(str) {
   
- 
-  var strVowels = "";
-  var i;
-  
-  for (i in str) {
-      
-      // checks if string charactors match listed vowels
-      if (str.charAt(i) == "a" || str.charAt(i) == "e" || str.charAt(i) == "i" || 
-  str.charAt(i) == "o" || str.charAt(i) == "u" )
-  
-   {// adds matching vowels from string
-          strVowels += str.charAt(i); 
-      }
-  }
-  
-  i = 0;
-  for (i in strVowels) {
-      console.log(strVowels.charAt(i));
-  }
-  ;
-  }
-  
-  
-  
-  vowels("Umuzi")
+function vowelsInStr(str) {
+    let vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'];
+    let strVowels = [];
+
+    //finds matching vowels in array
+    for (let i = 0; i < str.length; i++) {
+        if (vowels.includes(str[i])) {
+            if (!strVowels.includes(str[i].toLowerCase())) {
+            strVowels.push(str[i].toLowerCase());
+            }    
+        }
+    }
+    console.log(strVowels);
+}
+
+vowelsInStr("UmuzDUMInia")
