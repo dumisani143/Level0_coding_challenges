@@ -11,7 +11,7 @@ function vowelsInStr(str) {
             }    
         }
     }
-    console.log(strVowels);
+    console.log("Vowels: "+ strVowels.toString());
 }
 
 vowelsInStr("UmuzDUMInia")
